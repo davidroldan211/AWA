@@ -32,6 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'davidr211.pythonanywhere.com',
+    'www.davidr211.pythonanywhere.com',
     '.pythonanywhere.com',
     '.googleapis.com',
 ]
