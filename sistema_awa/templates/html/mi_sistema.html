@@ -1,0 +1,43 @@
+{% extends "html/base.html" %}
+{% load static %}
+{% block content %}
+<br>
+<div class="container">
+    <div class="shadow p-3 mb-5 bg-white rounded row">
+        <div class="col">
+            <h3 class="text-left">Temperatura</h3>
+        </div>
+        <div class="col">
+            <h3 class="text-right">{{obj.Temperatura}} °C</h3>
+        </div>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded row">
+        <div class="col">
+            <h3 class="text-left">OD</h3>
+        </div>
+        <div class="col">
+            <h3 class="text-right">{{obj.OD}} ppm</h3>
+        </div>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded row">
+        <div class="col">
+            <h3 class="text-left">Humedad</h3>
+        </div>
+        <div class="col">
+            <h3 class="text-right">{{obj.Humedad}} %</h3>
+        </div>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded row">
+        <div class="col">
+            <h3 class="text-left">Fecha</h3>
+        </div>
+        <div class="col">
+            <h3 class="text-right">{{obj.Fecha_y_hora}}</h3>
+        </div>
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Reiniciar sistema</button>
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Apagar Sistema</button>
+    </div>
+</div>
+{% endblock %}
