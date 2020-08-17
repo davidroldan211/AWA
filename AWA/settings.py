@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import pymysql
 
-#pip install PyMySQL
+#pip3 install PyMySQL
 
 pymysql.version_info = (1, 3, 13, "final", 0)
 pymysql.install_as_MySQLdb()
@@ -28,13 +28,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '01)_k0tc9wgbr8hugs94)58cr4%n&g_)lr=)hwir+38czq4viu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = False   
 
 ALLOWED_HOSTS = [
-    'davidr211.pythonanywhere.com',
-    'www.davidr211.pythonanywhere.com',
-    '.pythonanywhere.com',
-    '.googleapis.com',
+'18.221.155.0'
 ]
 
 
